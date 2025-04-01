@@ -1,7 +1,6 @@
-name: '@nadeemjazmawe/inno-setup-action-CLI'
-description: This action generate setup/installer files using Inno Setup
-
-author: '@NadeemJazmawe'
+name: 'InnoSetupAction'
+description: Generate installer files by Inno Setup for Windows platform
+author: 'zhangt58'
 
 inputs:
   filepath:
@@ -11,5 +10,5 @@ inputs:
 runs:
   using: 'composite'
   steps:
-    - run: ${{ github.action_path }}\src\ISCC.exe ${{inputs.filepath}}
+    - run: ${{ github.action_path }}\ISCC.exe ${{inputs.filepath}}
       shell: cmd
