@@ -14,7 +14,7 @@ First, you need to create InstallerScript.iss and insert it into the source code
 after that you use it in your workflow.
 
 ```
-- uses: zhangt58/InnoSetupAction@6.4.1
+- uses: zhangt58/InnoSetupAction@v6.4.3
   with:
     filepath: '<filepath for the .iss>'
 ```
